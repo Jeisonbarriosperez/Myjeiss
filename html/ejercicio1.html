@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Formulario # 1</title>
+</head>
+
+<body>
+    <style>
+        /* label {
+  display: inline-block;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  display: inline-block;
+  width: 200px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+} */
+
+        body {
+            background-color: rgb(138, 225, 231);
+        }
+
+        fieldset#S {
+            inline-size: 60%;
+           font-size: 150%;
+        }
+
+        fieldset#D {
+            inline-size: 60%;
+            font-size: 150%;
+        }
+
+        fieldset#F {
+            inline-size: 60%;
+            font-size: 150%;
+        }
+    </style>
+    <h1 style="font-size: 300%;">Zoo Keeper Aplication Form </h1>
+    <caption><em style="font-size: 150%;">Please complete the. Mandatory fields are marked with a <span
+                style="color: brown;"><strong>*</strong></span></em></caption><br><br>
+
+    <form action="">
+        <fieldset id="D">
+            <legend><strong>CONTACT DETAILS</strong></legend>
+            <p>
+                <label for="name">
+                    <span><strong>Nombre</strong></span>
+                    <strong><abbr title="required"><span style="color: brown;"><strong>*</strong></span></abbr><strong>
+                </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" maxlength="60" pattern="[a-zA-Z\s]+">
+            </p>
+            <p>
+                <label for="phone"><span><strong>Telephone</span></strong>
+                    <strong><abbr title="required"><span
+                                style="color: brown;"><strong>*</strong></span></abbr><strong></strong>
+                </label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" pattern="^\+\d{2}-\d{3}-\d{9}$">
+            </p>
+            <p>
+                <label for="mail">
+                    <Span>Email</span><strong><abbr title="required"><span
+                                style="color: brown;"><strong>*</strong></span></abbr><strong></strong>
+                </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input maxlength="30" type="email" id="mail" name="usermail">
+            </p>
+        </fieldset><br>
+        <fieldset id="S">
+            <legend>PERSONAL INFORMATION</legend>
+            <span style="color: brown;"><strong>*</strong></span><Span><strong>Age</strong></Span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;<input type="number" id="number" name="number" min="1" max="18" style="width: 8cm;"><br><br>
+            <span><strong>Gender</strong></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+            <datalist id="Lista">
+                <option value="Masculino"></option>
+                <option value="Femenino"></option>
+                <option value="Otro"></option>
+            </datalist>
+            <input size="40" type="text" list="Lista" placeholder="Escoja una opción">
+            <br><br>
+            <table>
+                <tr>
+                    <td><Span> When did you <br>
+                            first know you <br>
+                            wanted to be a <br>
+                            zoo-keeper?</Span><br><br><br><br><br><br></td>
+                    <td rowspan="2">
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="" id="" cols="40" rows="10"
+                            placeholder="Cuentame de ti"></textarea><br></td>
+                </tr>
+                <tr>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset id="F">
+            <legend>PICK YOUR FAVORITE ANIMALS</legend>
+    
+            <input type="checkbox"> Zebra &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox">Cat
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox">Anaconda &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox"> Human <br><br>
+            <input type="checkbox"> Elephant &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox"> Wildebeest &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox"> Pigeon &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox"> Crab
+        </fieldset> <br>
+    </form>
+    <input type="submit" value="Submit Application" style="width: 6cm; height: 2cm;">
+</body>
+
+</html>
